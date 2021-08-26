@@ -1,4 +1,4 @@
-from node:latest
+FROM node:latest
 
 ENV NODE_ENV=production
 
@@ -14,4 +14,4 @@ USER node
 
 EXPOSE 3000
 
-CMD ["npm" "start"]
+CMD ["npm", "start"]

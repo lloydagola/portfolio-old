@@ -1,8 +1,10 @@
 from node:latest
 
+ENV NODE_ENV=production
+
 WORKDIR /usr/src/app
 
-COPY ./package*.json ./
+COPY ./package*.json .
 
 RUN npm install
 
@@ -12,4 +14,4 @@ USER node
 
 EXPOSE 3000
 
-CMD ["yarn", "dev"]
+CMD ["npm" "start"]
